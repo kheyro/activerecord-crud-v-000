@@ -61,7 +61,7 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick"
   Movie.create(title: "Awesome Flick")
-  test = Movie.where(title: "Awesome Flick").new
+  test = Movie.where(title: "Awesome Flick")
   test.title = "Even Awesomer Flick"
   test.save
 end
